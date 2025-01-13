@@ -20,5 +20,14 @@ public class PlayerController : MonoBehaviour
         {
             transform.position += new Vector3(Time.deltaTime * 5.0f, 0, 0);
         }
+
+        if (Input.GetKey (KeyCode.W)) 
+        {
+            transform.position += new Vector3(0, Time.deltaTime * 5.0f, 0);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += new Vector3(0, -Time.deltaTime * 5.0f, 0);
+        }
     }
 }
